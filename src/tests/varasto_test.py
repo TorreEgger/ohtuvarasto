@@ -73,7 +73,7 @@ class TestVarasto(unittest.TestCase):
         v = Varasto(10, -5)
 
         self.assertAlmostEqual(v.saldo, 0)
-    
+
     def test_konstruktori_negatiivisella_tilavuudella(self):
         v = Varasto(-1)
 
@@ -81,6 +81,6 @@ class TestVarasto(unittest.TestCase):
 
     def test_str_palauttaa_oikean_merkkijonon(self):
         self.varasto.lisaa_varastoon(3)
-        
+
         expected = "saldo = 3, vielä tilaa 7"
         self.assertEqual(str(self.varasto), expected)
