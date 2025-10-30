@@ -41,6 +41,7 @@ class TestVarasto(unittest.TestCase):
 
 
     #!!HUOM!! Tehty Copilotilla nämä testit
+    #Muutos että saan virheen näkyviin
 
     def test_laitetaan_liikaa(self):
         self.varasto.lisaa_varastoon(1000)
