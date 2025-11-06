@@ -39,9 +39,8 @@ class TestVarasto(unittest.TestCase):
         # varastossa pitäisi olla tilaa 10 - 8 + 2 eli 4
         self.assertAlmostEqual(self.varasto.paljonko_mahtuu(), 4)
 
-
     #!!HUOM!! Tehty Copilotilla nämä testit
-    #Muutos että saan virheen näkyviin
+    # Muutos että saan virheen näkyviin
 
     def test_laitetaan_liikaa(self):
         self.varasto.lisaa_varastoon(1000)
